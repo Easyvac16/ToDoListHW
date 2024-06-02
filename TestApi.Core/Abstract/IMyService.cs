@@ -8,5 +8,7 @@ namespace TestApi.Core.Abstract
         public void AddToDo(ToDoListDTO toDoListDTO);
         public void RemoveFromToDo(ToDoList toDoList);
         public IEnumerable<ToDoList> GetAllList();
+
+        public ToDoList GetById(int id);
     }
 }

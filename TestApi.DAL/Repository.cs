@@ -26,7 +26,7 @@ namespace TestApi.DAL
         public IEnumerable<TEntity> GetAll<TEntity>() where TEntity : class =>
             _MyContext.Set<TEntity>();
 
-        public TEntity GetById<TEntity>(Guid id) where TEntity : class =>
+        public TEntity GetById<TEntity>(int id) where TEntity : class =>
             _MyContext.Set<TEntity>().Find(id);
 
         public TEntity Remove<TEntity>(TEntity entity) where TEntity : class

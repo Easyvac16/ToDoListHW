@@ -20,6 +20,9 @@ namespace TestApi.Core
 
             _listRepository.Add(newToDo);
         }
+
+        public ToDoList GetById(int id) =>
+            _listRepository.GetById<ToDoList>(id);
         public void RemoveFromToDo(ToDoList toDoList) =>
             _listRepository.Remove(toDoList);
 

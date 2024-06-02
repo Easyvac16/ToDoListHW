@@ -35,5 +35,13 @@ namespace TestApi.Controllers
 
         }
 
+        [HttpGet("{id}", Name = "GetById")]
+        public IActionResult GetById(int id)
+        {
+            var result = _service.GetById(id);
+
+            return Ok(result);
+        }
+
     }
 }
